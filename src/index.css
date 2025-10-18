@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Focus styles */
+:root {
+  --focus-ring: 0 0 0 4px rgba(255, 70, 88, 0.15);
+}
+
+/* Light theme base */
+body {
+  @apply bg-white text-gray-800 antialiased;
+}
+
+/* Dark theme will be applied by adding .dark to html */
+.dark body {
+  @apply bg-[#08101d] text-gray-200;
+}
+
+/* Smooth transition for colors */
+* {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease,
+    box-shadow 150ms ease, transform 150ms ease;
+}
