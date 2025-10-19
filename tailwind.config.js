@@ -1,25 +1,6 @@
-/** 
-export default {
-  content: [],
-  theme: {
-    extend: {
-      colors: {
-
-      },
-      fontFamily: {
-
-        
-      }
-
-
-    },
-  },
-  plugins: [],
-}**/
-
 module.exports = {
-  darkMode: 'class', // we'll toggle 'dark' class via ThemeContext
-  content: ['./index.html', './src//*.{js,jsx}'],
+  darkMode: 'class',
+  content: ['./index.html', './src//*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -39,7 +20,6 @@ module.exports = {
         papaya: '#FFEFD5',
         oceanic: '#2bb3b3',
         coolmint: '#9DF0E1',
-        // dark theme accents
         dprimary: '#6e8fc8',
         dsecondary: '#946ca8',
         ddeep: '#233760',
@@ -54,8 +34,13 @@ module.exports = {
         fadein: 'fadein .6s ease-in-out',
       },
     },
+
+
+    
+    
   },
-  plugins: [require('@tailwindcss/forms')],
-}
+  plugins: [require('@tailwindcss/forms')]
+};
+
 
 
