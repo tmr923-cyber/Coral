@@ -1,3 +1,3 @@
 export const formatPrice = (n) => {
-  return $$;{Number(n).toFixed(2)}
+  return `$${Number(n).toFixed(2)}`
 }
